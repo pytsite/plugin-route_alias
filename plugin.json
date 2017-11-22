@@ -1,0 +1,19 @@
+{
+  "name": "route_alias",
+  "version": "1.0",
+  "description": {
+    "en": "Route Alias",
+    "ru": "Route Alias",
+    "uk": "Route Alias"
+  },
+  "url": "https://github.com/pytsite/plugin-route_alias",
+  "author": {
+    "name": "Alexander Shepetko",
+    "email": "a@shepetko.com",
+    "url": "https://shepetko.com"
+  },
+  "requires": {
+    "packages": [],
+    "plugins": []
+  }
+}
