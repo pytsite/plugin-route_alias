@@ -1,7 +1,8 @@
 """Route Paths API.
 """
 import re
-from pytsite import util as _util, odm as _odm, lang as _lang
+from pytsite import util as _util, lang as _lang
+from plugins import odm as _odm
 from . import _model, _error
 
 __author__ = 'Alexander Shepetko'
@@ -15,7 +16,7 @@ def create(alias: str, target: str, language: str = None) -> _model.RouteAlias:
     if not language:
         language = _lang.get_current()
 
-    entity = _odm.dispense('route_alias')
+    entity = _odm.dispense('route_alias')  # type: _model.RouteAlias
     entity.f_set('language', language).f_set('alias', alias).f_set('target', target)
 
     return entity

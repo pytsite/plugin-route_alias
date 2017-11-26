@@ -11,7 +11,8 @@ __license__ = 'MIT'
 
 
 def _init():
-    from pytsite import odm, router
+    from pytsite import router
+    from plugins import odm
     from . import _eh
 
     odm.register_model('route_alias', model.RouteAlias)

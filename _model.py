@@ -1,6 +1,7 @@
 """Route Alias Model.
 """
-from pytsite import odm as _odm, router as _router, lang as _lang
+from pytsite import router as _router, lang as _lang
+from plugins import odm as _odm
 
 __author__ = 'Alexander Shepetko'
 __email__ = 'a@shepetko.com'

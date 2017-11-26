@@ -1,6 +1,6 @@
 {
   "name": "route_alias",
-  "version": "1.0",
+  "version": "1.0.1",
   "description": {
     "en": "Route Alias",
     "ru": "Route Alias",
@@ -14,6 +14,8 @@
   },
   "requires": {
     "packages": [],
-    "plugins": []
+    "plugins": [
+      "odm"
+    ]
   }
 }
