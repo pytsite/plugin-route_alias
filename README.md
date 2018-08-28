@@ -4,7 +4,7 @@
 ## Changelog
 
 
-### 1.1.1 (2017-08-28)
+### 1.1.1 (2018-08-28)
 
 Ukrainian paths transliteration fixed.
 
