@@ -1,11 +1,11 @@
-"""PytSite Route Alias Event Handlers.
+"""PytSite Route Alias Plugin Events Handlers
 """
-from pytsite import router as _router
-from . import _api, _error
-
-__author__ = 'Alexander Shepetko'
+__author__ = 'Oleksandr Shepetko'
 __email__ = 'a@shepetko.com'
 __license__ = 'MIT'
+
+from pytsite import router as _router
+from . import _api, _error
 
 
 def router_pre_dispatch():

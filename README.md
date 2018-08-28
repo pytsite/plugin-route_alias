@@ -4,6 +4,11 @@
 ## Changelog
 
 
+### 1.1.1 (2017-08-28)
+
+Ukrainian paths transliteration fixed.
+
+
 ### 1.1 (2017-12-13)
 
 Support for PytSite-7.0.

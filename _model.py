@@ -1,11 +1,11 @@
-"""Route Alias Model.
+"""PytSite Route Alias Plugins Models
 """
-from pytsite import router as _router, lang as _lang
-from plugins import odm as _odm
-
-__author__ = 'Alexander Shepetko'
+__author__ = 'Oleksandr Shepetko'
 __email__ = 'a@shepetko.com'
 __license__ = 'MIT'
+
+from pytsite import router as _router, lang as _lang
+from plugins import odm as _odm
 
 
 class RouteAlias(_odm.model.Entity):
