@@ -41,7 +41,7 @@ class RouteAlias(_odm.model.Entity):
         """
         if field_name == 'alias':
             from . import _api
-            value = _api.sanitize_alias_string(value, self.language)
+            value = _api.sanitize_alias_string(value, self.language, None if self.is_new else self)
 
         return super()._on_f_set(field_name, value, **kwargs)
 

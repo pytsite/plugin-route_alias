@@ -4,6 +4,11 @@
 ## Changelog
 
 
+### 1.1.2 (2018-12-01)
+
+Sanitizing alias of existing entity fixed.
+
+
 ### 1.1.1 (2018-08-28)
 
 Ukrainian paths transliteration fixed.

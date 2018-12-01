@@ -22,7 +22,7 @@ def create(alias: str, target: str, language: str = None) -> _model.RouteAlias:
     return entity
 
 
-def sanitize_alias_string(s: str, language: str = None) -> str:
+def sanitize_alias_string(s: str, language: str = None, exclude: _model.RouteAlias = None) -> str:
     """Sanitize a path string.
     """
     if not language:
@@ -38,7 +38,12 @@ def sanitize_alias_string(s: str, language: str = None) -> str:
 
     itr = 0
     while True:
-        if not _odm.find('route_alias').eq('alias', s).eq('language', language).first():
+        f = _odm.find('route_alias').eq('alias', s).eq('language', language)
+
+        if exclude:
+            f.ne('_id', exclude.id)
+
+        if not f.count():
             return s
 
         itr += 1
