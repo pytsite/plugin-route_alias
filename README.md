@@ -4,6 +4,11 @@
 ## Changelog
 
 
+### 1.2 (2019-01-07)
+
+Support of `odm-5.7`.
+
+
 ### 1.1.2 (2018-12-01)
 
 Sanitizing alias of existing entity fixed.

@@ -1,6 +1,6 @@
 {
   "name": "route_alias",
-  "version": "1.1.2",
+  "version": "1.2",
   "description": {
     "en": "Route Alias",
     "ru": "Route Alias",
@@ -15,7 +15,7 @@
   "requires": {
     "pytsite": ">=7.32",
     "plugins": {
-      "odm": "5.x"
+      "odm": ">=5.7<6"
     }
   }
 }

@@ -53,7 +53,7 @@ def sanitize_alias_string(s: str, language: str = None, exclude: _model.RouteAli
             s = re.sub('-\d+$', '-' + str(itr), s)
 
 
-def find(language: str = None) -> _odm.Finder:
+def find(language: str = None) -> _odm.SingleModelFinder:
     """Get route alias finder.
     """
     return _odm.find('route_alias').eq('language', language or _lang.get_current())
