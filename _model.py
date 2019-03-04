@@ -15,9 +15,9 @@ class RouteAlias(_odm.model.Entity):
     def _setup_fields(self):
         """Hook.
         """
-        self.define_field(_odm.field.String('alias', required=True))
-        self.define_field(_odm.field.String('target', required=True))
-        self.define_field(_odm.field.String('language', required=True, default=_lang.get_current()))
+        self.define_field(_odm.field.String('alias', is_required=True))
+        self.define_field(_odm.field.String('target', is_required=True))
+        self.define_field(_odm.field.String('language', is_required=True, default=_lang.get_current()))
 
     def _setup_indexes(self):
         """Hook.
@@ -45,7 +45,7 @@ class RouteAlias(_odm.model.Entity):
 
         return super()._on_f_set(field_name, value, **kwargs)
 
-    def _after_delete(self, **kwargs):
+    def _on_after_delete(self, **kwargs):
         """Hook.
         """
         _router.remove_path_alias(self.alias)
